@@ -5,6 +5,7 @@
 }
 body{
     display: flex;
+    width: 100%;
 }
 .majt{
     width: 50%;
@@ -66,7 +67,7 @@ img{
     list-style: none;
     width: 100%;
     display: flex;
-    gap: 18em;
+    gap: 15em;
     flex-direction: column;
     animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
@@ -103,14 +104,14 @@ img{
 }
 h1{
     letter-spacing: 3px;
-    font-size: 5em;
+    font-size: 4em;
 }
 p{
     letter-spacing: 5px;
     position: relative;
-    bottom: 3em;
+    bottom: 2.5em;
 }
 span{
-    font-size: 3.5em;
+    font-size: 3em;
     color: rgb(0, 213, 255);
 }
