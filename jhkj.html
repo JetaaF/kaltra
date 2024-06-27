@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="detr_validpass.css">
+</head>
+
+<body>
+    <div id="forma">
+        <p class="l">Write your Password</p>
+        <p id="paragf"></p>
+        <input id="inputiEmail" placeholder="Password" type="password">
+        <button onclick="number()" id="but-on">click</button>
+    </div>
+
+
+    <!-- rebbitMQ -->
+
+    <script>
+        function number() {
+            let rezultate = document.querySelector("#paragf"); //s----space me ta marr
+            //d{2}-ti merr 2  digits
+            let emailInput = document.getElementById("inputiEmail").value;
+            //?=.* ---a e ka perdor te pakten (dicka)
+            if (/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-.,/;:`]).{8,}$/.test(emailInput)) {
+                rezultate.textContent = "Password is valid";
+                rezultate.style.color = 'green'
+                emailInput.style.backgroundColor = "green"
+            }
+            else {
+                rezultate.textContent = "Password is Invalid";
+                rezultate.style.color = 'red';
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>
