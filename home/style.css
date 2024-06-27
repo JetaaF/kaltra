@@ -2,6 +2,108 @@ body{
     margin: 0;
     font-family: monospace;
 }
+nav{
+    background-color: rgba(255, 255, 255, 0.286);
+    width: 81em;
+    height: 4em;
+    position: sticky;
+    top: 2px;
+    left: 17em;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    /* filter: blur(4px); */
+    backdrop-filter: blur(10px);
+    justify-content: space-between;
+}
+.per-link{
+    display: flex;
+    background-color: red;
+    justify-content: space-evenly;
+    width: 10em;
+    /* right: 50em; */
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#searchform{
+    margin-left: 5em;
+    width: 40em;
+    display: flex;
+    align-items: center;
+    max-width: 40em;
+    background-color: rgb(205, 212, 212);
+    
+}
+.input-group-text:hover{
+    background-color:rgb(157, 162, 162);
+    border: 1px solid rgb(91, 91, 91);
+}
+.input-group-text{
+    width: 2em;
+    height: 2.1em;
+    background-color: green;
+    border: 1px solid grey;
+    border-radius: 7px 0 0 7px;
+}
+.form-control{
+    height: 2em;
+    width: 70%;
+    padding-left: 0.5em;
+    outline: none;
+    border: 1px solid grey;
+}
+svg{
+    width: 2em;
+    height: 2em;
+}
+.krejt-contain{
+    background-color: yellow;
+    height: 150vh;
+    position: relative;
+    width: 75em;
+    left: 21em;
+}
+.krejt-posht{
+    top: 4%;
+    position: relative;
+}
+.per-scroll-horizontalisht{
+    margin: 0 2% 0 2%;
+}
+.linku{
+    display: flex;
+    width: 25em;
+    background-color: red;
+    height: 20em;
+    border: 1px solid grey ;
+    
+}
+.linku:hover{
+    width: 25.3em;
+    height: 20.2em; 
+    background-color: blue;
+    border: 1px solid black;
+    color: #fff;
+    border-radius: 2px;
+}
+.linku img{
+    overflow: hidden;
+}
+.title{
+    padding: 5px;
+    font-size: 18px;
+    width: 50%;
+}
+h3{
+    font-size: 25px;
+}
+.sb{
+    font-size: 14px;
+    letter-spacing: 2px;
+    
+}
 .slider{
     width: 75em;
     max-width: 75vw;
@@ -9,6 +111,7 @@ body{
     margin: auto;
     position: relative;
     overflow: hidden;
+    top: 0.8em;
 }
 
 .list{

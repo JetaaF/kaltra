@@ -43,3 +43,29 @@ dots.forEach((li, key) => {
         reloadSlider()
     })
 })
+const categories = document.querySelectorAll('.becoming, .crying, .the, .in, .hmart, .little, .women, .song, .of, .solomon, .act, .creative, .tale, .handmaid, .kite, .runner, .where, .sing, .crawdads');
+
+const el = document.getElementById('searchform')
+el.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const inputEl = document.getElementById('searchInput')
+    const query = inputEl.value;
+    
+    if (!query) {
+        categories.forEach(category => {
+            category.style.display = 'block';
+        })
+    }
+
+    categories.forEach(category => {
+        debugger;
+        const categoryName = category.classList[0];
+        
+        if (categoryName.includes(query)) {
+            category.style.display = 'block';
+        } else {
+            category.style.display = 'none';
+        }
+    });
+})
