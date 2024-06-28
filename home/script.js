@@ -69,3 +69,58 @@ el.addEventListener('submit', (e) => {
         }
     });
 })
+
+let teksti = document.getElementById("per-json");
+let autori = document.getElementById("aut");
+
+let qu = {
+    "thanie":[{
+        "quote":"To think is easy. To act is hard. But the hardest thing in the world is to act in accordance with your thinking.",
+        "autor":"Johann Wolfgang von Goethe"
+    },{
+        "quote":"Stupid is the man who always remains the same.",
+        "autor":"Valtaire"
+    },{
+        "quote":"The scariest moment is always just before you start.",
+        "autor":"Stephan King"
+    },{
+        "quote":"Wanting to be someone else is a waste of who you are.",
+        "autor":"Kurt Cabian"
+    },{
+        "quote":"Mistakes are proof that you're trying.",
+        "autor":"Ernest Hemingway"
+    }]
+}
+// Build the quotes string
+
+
+let currentQuoteIndex = 0;
+
+
+
+
+
+
+
+function displayQuote() {
+  currentQuoteIndex = currentQuoteIndex % qu.thanie.length; // Loop back if at the end
+
+  teksti.textContent = qu.thanie[currentQuoteIndex].quote;
+  autori.textContent = `- ${qu.thanie[currentQuoteIndex].autor}`;
+  currentQuoteIndex++;
+}
+
+const konDiv = document.querySelector(".e-mmm");
+
+konDiv.addEventListener("click", function() {
+  displayQuote();
+});
+
+window.onload = function() {
+  displayQuote(); // Display first quote and author on load
+}
+
+
+  
+
+  

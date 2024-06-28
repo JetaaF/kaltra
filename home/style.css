@@ -1,14 +1,15 @@
-body{
+body {
     margin: 0;
     font-family: monospace;
 }
-nav{
+
+nav {
     background-color: rgba(255, 255, 255, 0.127);
-    width: 81em;
+    width: 95em;
     height: 4em;
     position: sticky;
     top: 2px;
-    left: 17em;
+    left: 5em;
     display: flex;
     align-items: center;
     z-index: 1;
@@ -16,49 +17,65 @@ nav{
     backdrop-filter: blur(10px);
     justify-content: space-between;
 }
-.per-link{
+
+.per-link {
     display: flex;
-    background-color: red;
+    /* background-color: red; */
     justify-content: space-evenly;
-    width: 10em;
+    width: 20em;
+    align-items: center;
+    height: 2em;
     /* right: 50em; */
+    font-size: 20px;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-#searchform{
+
+#searchform {
     margin-left: 5em;
-    width: 40em;
+    width: 30em;
     display: flex;
     align-items: center;
     max-width: 40em;
     background-color: rgb(205, 212, 212);
-    
+
 }
-.input-group-text:hover{
-    background-color:rgb(157, 162, 162);
+
+.input-group-text:hover {
+    background-color: rgb(157, 162, 162);
     border: 1px solid rgb(91, 91, 91);
 }
-.input-group-text{
-    width: 2em;
-    height: 2.1em;
-    background-color: green;
+
+.input-group-text {
+    width: 2.9em;
+    height: 3.1em;
+    background-color: rgb(210, 210, 210);
     border: 1px solid grey;
     border-radius: 7px 0 0 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.form-control{
-    height: 2em;
-    width: 70%;
+
+.form-control {
+    height: 2.2em;
+    width: 90%;
     padding-left: 0.5em;
     outline: none;
     border: 1px solid grey;
+    font-size: 18px;
 }
-svg{
-    width: 2em;
-    height: 2em;
+
+svg {
+    width: 2.5em;
+    height: 2.5em;
+    /* color: grey; */
 }
-.krejt-contain{
+
+.krejt-contain {
     /* background-color: yellow; */
     height: 150vh;
     position: relative;
@@ -66,50 +83,58 @@ svg{
     top: 5em;
     left: 5em;
 }
-.per-scroll-horizontalisht{
+
+.per-scroll-horizontalisht {
     display: flex;
     overflow-x: scroll;
     height: 22em;
     gap: 10px;
 }
-.krejt-posht{
+
+.krejt-posht {
     /* top: 4%; */
     position: relative;
 }
 
-.linku{
+.linku {
     display: flex;
     width: 25em;
     /* background-color: red; */
     height: 20em;
-    border: 1px solid grey ;
-    
+    border: 1px solid grey;
+
 }
-.linku:hover{
+
+.linku:hover {
     width: 25.3em;
-    height: 20.2em; 
+    height: 20.2em;
     background-color: rgb(234, 234, 238);
     border: 1px solid black;
-    color: #fff;
+    color: #717171;
     border-radius: 2px;
 }
-.linku img{
+
+.linku img {
     overflow: hidden;
 }
-.title{
+
+.title {
     padding: 5px;
     font-size: 18px;
     width: 50%;
 }
-h3{
+
+h3 {
     font-size: 25px;
 }
-.sb{
+
+.sd {
     font-size: 14px;
     letter-spacing: 2px;
-    
+
 }
-.slider{
+
+.slider {
     width: 95vw;
     max-width: 100vw;
     height: 30em;
@@ -119,7 +144,7 @@ h3{
     /* top: 0.6em; */
 }
 
-.list{
+.list {
     position: absolute;
     top: 0;
     left: 0;
@@ -128,13 +153,15 @@ h3{
     width: max-content;
     transition: 1s;
 }
-.list img{
+
+.list img {
     width: 95vw;
     max-width: 100vw;
     height: 100%;
     object-fit: cover;
 }
-.buttons{
+
+.buttons {
     position: relative;
     top: 45%;
     height: 5%;
@@ -142,7 +169,8 @@ h3{
     display: flex;
     justify-content: space-between;
 }
-.buttons button{
+
+.buttons button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -153,7 +181,8 @@ h3{
     font-weight: bolder;
     font-size: 20px;
 }
-.dots{
+
+.dots {
     position: absolute;
     bottom: 10px;
     color: #fff;
@@ -164,7 +193,8 @@ h3{
     display: flex;
     justify-content: center;
 }
-.dots li{
+
+.dots li {
     list-style: none;
     width: 10px;
     height: 10px;
@@ -173,6 +203,128 @@ h3{
     border-radius: 20px;
     transition: 1s;
 }
-.dots li.active{
+
+.dots li.active {
     width: 30px;
+}
+
+.per-scroll-posht {
+    /* background-color: rebeccapurple; */
+    width: 105em;
+    height: 35em;
+    /* margin-top: 6em; */
+    display: flex;
+    overflow: hidden;
+    padding-left: 1.5em;
+}
+
+.div-tjeter {
+    /* display: flex; */
+    width: 105em;
+    background:linear-gradient(to right,transparent 50%, #dedfe0 100%);
+    /* padding-left: 2em; */
+    padding-top: 1px;
+    height: 38em;
+    position: relative;
+    top: 5em;}
+
+/* qitu te flex */
+.disa-scroll-majt {
+    /* background-color: aqua; */
+    width: 56em;
+    height: 29em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    gap: 3px;
+    
+}
+
+.e-gjere {
+    /* background-color: orange; */
+    width: 95%;
+    height: 4.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.e-gjere:hover .e-majt {
+    transform: scale(1.1);
+    opacity: 100%;
+    border-radius: 0 10px 10px 0;
+    background-position: 20px;
+}
+
+.e-gjere:hover h2 {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 23px;
+    margin-left: 20px;
+
+}
+
+.e-gjere:hover {
+    background-color: #dedfe0;
+    box-shadow: 1px 5px 20px 1px #838181;
+    border-radius: 10px;
+    height: 4.6em;
+}
+
+.e-majt {
+    width: 55%;
+    height: 100%;
+    /* background-color: violet; */
+    overflow: hidden;
+    text-align: center;
+    background: url(./../img/song\ of\ solomon.jfif) center;
+    background-size: cover;
+    opacity: 75%;
+    background-repeat: no-repeat;
+}
+
+h2 .e-titulli {
+    font-size: 21px;
+    color: grey;
+}
+
+.q {
+    background: url(./../img/the\ creative\ act.jfif);
+}
+
+.w {
+    background: url(./../img/the\ worst\ wedding\ date);
+}
+
+.e {
+    background: url(./../img/the\ kite\ runner.jfif);
+}
+
+.r {
+    background: url(./../img/the\ handmaids\ tale.jfif);
+}
+
+.t {
+    background: url(./../img/crying\ in\ Hmart.jfif);
+}
+
+.e-mmm{
+    /* background-color: gold; */
+    width: 30em;
+    height: 20em;
+    top: 5em;
+    left: 5em;
+    position: relative;
+}
+#per-json{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+#aut{
+    top: 20m;
+    left: 10em;
+    position: relative;
+    color: grey;
+    font-size: 18px;
 }
