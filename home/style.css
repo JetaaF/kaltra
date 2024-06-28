@@ -7,7 +7,7 @@ nav {
     background-color: rgba(255, 255, 255, 0.127);
     width: 95em;
     height: 4em;
-    position: sticky;
+    position: fixed;
     top: 2px;
     left: 5em;
     display: flex;
@@ -17,7 +17,9 @@ nav {
     backdrop-filter: blur(10px);
     justify-content: space-between;
 }
-
+.per-dergim:hover{
+    color: #4c637b;
+}
 .per-link {
     display: flex;
     /* background-color: red; */
@@ -46,14 +48,14 @@ a {
 
 .input-group-text:hover {
     background-color: rgb(157, 162, 162);
-    border: 1px solid rgb(91, 91, 91);
+    border: 1px solid #4c637b;
 }
 
 .input-group-text {
     width: 2.9em;
     height: 3.1em;
     background-color: rgb(210, 210, 210);
-    border: 1px solid grey;
+    border: 1px solid #4c637b;
     border-radius: 7px 0 0 7px;
     display: flex;
     justify-content: center;
@@ -65,7 +67,7 @@ a {
     width: 90%;
     padding-left: 0.5em;
     outline: none;
-    border: 1px solid grey;
+    border: 1px solid #4c637b;
     font-size: 18px;
 }
 
@@ -86,7 +88,7 @@ svg {
 
 .per-scroll-horizontalisht {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     height: 22em;
     gap: 10px;
 }
@@ -101,7 +103,7 @@ svg {
     width: 25em;
     /* background-color: red; */
     height: 20em;
-    border: 1px solid grey;
+    border: 1px solid #4c637b;
 
 }
 
@@ -109,8 +111,8 @@ svg {
     width: 25.3em;
     height: 20.2em;
     background-color: rgb(234, 234, 238);
-    border: 1px solid black;
-    color: #717171;
+    border: 1px solid rgb(24, 27, 44);
+    color: #4c637b;
     border-radius: 2px;
 }
 
@@ -126,6 +128,7 @@ svg {
 
 h3 {
     font-size: 25px;
+    color: rgb(24, 27, 44);
 }
 
 .sd {
@@ -134,16 +137,35 @@ h3 {
 
 }
 
+*::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: radial-gradient(rgb(237, 237, 237),rgb(255, 255, 255));
+    /* color of the tracking area */
+}
+*::-webkit-scrollbar-thumb:hover {
+    background: rgb(237, 237, 237);
+    /* color of the tracking area */
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgba(23, 26, 40, 0.126);
+}
+
 .slider {
     width: 95vw;
     max-width: 100vw;
-    height: 30em;
+    height: 34em;
     margin: auto;
     position: relative;
     overflow: hidden;
-    /* top: 0.6em; */
+    top: 4em;
 }
-
+#ja{
+padding-top: 4em;}
 .list {
     position: absolute;
     top: 0;
@@ -174,8 +196,8 @@ h3 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #fff5;
-    color: #fff;
+    background-color: rgba(124, 124, 124, 0.333);
+    color: #4f4f4f;
     border: none;
     font-family: monospace;
     font-weight: bolder;
@@ -185,7 +207,7 @@ h3 {
 .dots {
     position: absolute;
     bottom: 10px;
-    color: #fff;
+    color: #8c8c8c;
     left: 0;
     width: 100%;
     margin: 0;
@@ -198,7 +220,7 @@ h3 {
     list-style: none;
     width: 10px;
     height: 10px;
-    background-color: #fff;
+    background-color: #a9a9a9;
     margin: 20px;
     border-radius: 20px;
     transition: 1s;
@@ -221,12 +243,13 @@ h3 {
 .div-tjeter {
     /* display: flex; */
     width: 105em;
-    background:linear-gradient(to right,transparent 50%, #dedfe0 100%);
+    background: linear-gradient(to right, transparent 50%, #dedfe0 100%);
     /* padding-left: 2em; */
     padding-top: 1px;
     height: 38em;
     position: relative;
-    top: 5em;}
+    top: 7em;
+}
 
 /* qitu te flex */
 .disa-scroll-majt {
@@ -238,7 +261,7 @@ h3 {
     /* justify-content: center; */
     justify-content: space-evenly;
     gap: 3px;
-    
+
 }
 
 .e-gjere {
@@ -259,7 +282,7 @@ h3 {
 .e-gjere:hover h2 {
     display: flex;
     align-items: center;
-    color: black;
+    color: rgb(42, 47, 61);
     font-size: 23px;
     margin-left: 20px;
 
@@ -267,7 +290,7 @@ h3 {
 
 .e-gjere:hover {
     background-color: #dedfe0;
-    box-shadow: 1px 5px 20px 1px #838181;
+    box-shadow: 1px 5px 20px 1px rgba(33, 37, 60, 0.726);
     border-radius: 10px;
     height: 4.6em;
 }
@@ -286,7 +309,7 @@ h3 {
 
 h2 .e-titulli {
     font-size: 21px;
-    color: grey;
+    color: #4c637b;
 }
 
 .q {
@@ -309,7 +332,7 @@ h2 .e-titulli {
     background: url(./../img/crying\ in\ Hmart.jfif);
 }
 
-.e-mmm{
+.e-mmm {
     /* background-color: gold; */
     width: 30em;
     height: 20em;
@@ -317,14 +340,28 @@ h2 .e-titulli {
     left: 5em;
     position: relative;
 }
-#per-json{
+
+#per-json {
     font-size: 20px;
     letter-spacing: 2px;
 }
-#aut{
+
+#aut {
     top: 20m;
     left: 10em;
     position: relative;
-    color: grey;
+    color: #4c637b;
     font-size: 18px;
+}
+.item{
+    width: 80em;
+}
+.item img{
+    width: 30em;
+    height: 25em;
+    background: cover;
+    filter: contrast(20px);
+    position: relative;
+    left: 40em;
+    top: 4em;
 }

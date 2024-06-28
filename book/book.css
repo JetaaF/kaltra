@@ -58,7 +58,7 @@ hr{
     width: 58em;
     position: relative;
     /* width: 60%; */
-    /* top: -51em; */
+    top: 4em;
     left: 55em;
 }
 .maja hr{
@@ -75,7 +75,7 @@ hr{
 .chapter{
     height: auto;
     /* background-color: tan; */
-    background-color: #f0f1f2;
+    background-color: #fcfcfc;
     padding-top: 10em;
     position: relative;
     /* top: 5em; */
@@ -86,7 +86,7 @@ hr{
     background-color: #fcfcfd;
     width: auto;
     height: 3em;
-    border: 1px solid grey;
+    border: 1px solid #4c637b;
     border-radius: 10px;
     display: flex;
     align-items: center;
